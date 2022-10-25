@@ -3,6 +3,9 @@ import numpy as np
 import pandas as pd
 from basic_functions import read_image, convert_image_to_array, add_gaussian_noise, add_salt_peper_noise
 from PIL import Image as im
+import matplotlib.pyplot as plt
+
+
 
 if __name__ == '__main__':
     list_img = ['1.jpg', '2.jpg', '3.jpg']
