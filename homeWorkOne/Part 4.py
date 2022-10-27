@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 
 
 def process_image():
-    path = 'Images'
+    path = 'data'
     for filename in os.listdir(path):
         image = cv2.imread(os.path.join(path, filename))
         gray = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
@@ -18,20 +18,18 @@ def process_image():
         gradient = cv2.subtract(gradX, gradY)
         gradient = cv2.convertScaleAbs(gradient)
 
-        blurred = cv2.blur(gradient, (15, 15))
-        (_, thresh) = cv2.threshold(blurred, 220, 255, cv2.THRESH_BINARY)
+        # blurred = cv2.blur(gradient, (15, 15))
+        blurred = cv2.bilateralFilter(edge_enh, 13, 50, 50)
+        (_, thresh) = cv2.threshold(blurred, 200, 255, cv2.THRESH_BINARY)
 
-
-
-
-        kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (11, 11))
+        kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (19, 19))
         closed = cv2.morphologyEx(thresh, cv2.MORPH_CLOSE, kernel)
 
         plt.imshow(closed, cmap='gray')
         plt.show()
 
-        closed = cv2.erode(closed, None, iterations=5)
-        closed = cv2.dilate(closed, None, iterations=5)
+        closed = cv2.erode(closed, None, iterations=4)
+        closed = cv2.dilate(closed, None, iterations=4)
 
         plt.imshow(closed, cmap='gray')
         plt.show()
