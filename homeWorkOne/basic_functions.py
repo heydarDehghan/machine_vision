@@ -1,9 +1,10 @@
 from PIL import Image as im
 import numpy as np
 import cv2
-
+from skimage.metrics import structural_similarity as ssim
 import random
 import cv2
+import math
 
 
 def add_salt_peper_noise(img):
@@ -45,3 +46,18 @@ def read_image(path, gray=True):
 
 def convert_array_to_image(arr):
     pass
+
+def calculate_psnr(img1, img2):
+    # img1 = img1.astype(np.float64)
+    # img2 = img2.astype(np.float64)
+    mse = np.mean((img1 - img2) ** 2)
+    if mse == 0:
+        return float('inf')
+    return 20 * math.log10(255.0 / math.sqrt(mse))
+
+
+def calculate_ssim(img1, img2):
+    img1 = cv2.cvtColor(img1, cv2.COLOR_RGB2GRAY)
+    img2 = cv2.cvtColor(img2, cv2.COLOR_RGB2GRAY)
+    score = ssim(img1, img2)
+    return score

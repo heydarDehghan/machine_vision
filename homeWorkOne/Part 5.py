@@ -43,7 +43,7 @@ def shift_image(image):
     # new_x, new_y = int(dx + ext_x), int(dy + ext_y)
     shifted = np.zeros((dx, dy, 3), dtype=image.dtype)
     shifted[ext_x:, ext_y:] = image[0:dx - ext_x, 0:dy - ext_y]
-    plt.imshow(shifted)
+    plt.imshow(cv2.cvtColor(shifted, cv2.COLOR_BGR2RGB))
     plt.show()
     return shifted
 
@@ -53,7 +53,7 @@ def rotate_image(image, angle):
     center = tuple(np.array([row, col]) / 2)
     rot_mat = cv2.getRotationMatrix2D(center, angle, scale=0.8)
     rotated_image = cv2.warpAffine(image, rot_mat, (col, row))
-    plt.imshow(rotated_image)
+    plt.imshow(cv2.cvtColor(rotated_image, cv2.COLOR_BGR2RGB))
     plt.show()
     return rotated_image
 
