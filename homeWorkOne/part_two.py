@@ -11,7 +11,8 @@ img = im.open('data/hands.png')
 imgGray = img.convert('L')
 
 numpydata = np.array(imgGray)
-
+plt.imshow(numpydata, cmap='gray')
+plt.show()
 numpydata = numpydata.reshape(-1)
 
 info = dict(Counter(numpydata))

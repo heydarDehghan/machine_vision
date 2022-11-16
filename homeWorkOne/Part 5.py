@@ -67,7 +67,7 @@ def calculate_psnr(img1, img2):
     return mse, 20 * math.log10(255.0 / math.sqrt(mse))
 
 
-def calculate_ssim(img1, img2):
+def calculate_ssim(img1, img2):  # Structural Similarity Index
     img1 = cv2.cvtColor(img1, cv2.COLOR_RGB2GRAY)
     img2 = cv2.cvtColor(img2, cv2.COLOR_RGB2GRAY)
     score = ssim(img1, img2)

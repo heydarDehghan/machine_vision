@@ -28,8 +28,8 @@ def process_image():
         # plt.imshow(closed, cmap='gray')
         # plt.show()
 
-        closed = cv2.dilate(closed, None, iterations=8)
-        closed = cv2.erode(closed, None, iterations=4)
+        closed = cv2.dilate(closed, None, iterations=8)  # Bold
+        closed = cv2.erode(closed, None, iterations=4)  # Thin
 
         # plt.imshow(closed, cmap='gray')
         # plt.show()

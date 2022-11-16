@@ -6,33 +6,6 @@ import random
 import cv2
 import math
 
-
-def add_salt_peper_noise(img):
-    row, col = img.shape
-    number_of_pixels = random.randint(3000, 10000)
-    for i in range(number_of_pixels):
-        y_coord = random.randint(0, row - 1)
-        x_coord = random.randint(0, col - 1)
-        img[y_coord][x_coord] = 255
-
-    number_of_pixels = random.randint(3000, 10000)
-    for i in range(number_of_pixels):
-        y_coord = random.randint(0, row - 1)
-        x_coord = random.randint(0, col - 1)
-        img[y_coord][x_coord] = 0
-
-    return img
-
-def add_gaussian_noise(X_img):
-    row, col = X_img.shape
-    mu, sigma = 0, 0.1
-    # creating a noise with the same dimension as the dataset (2,2)
-    noise = 1000 * np.random.normal(mu, sigma, [row, col])
-    noisy = X_img + noise
-
-    return noisy
-
-
 def convert_image_to_array(img):
     return np.array(img)
 
@@ -43,11 +16,33 @@ def read_image(path, gray=True):
         img = img.convert('L')
     return convert_image_to_array(img)
 
+def add_gaussian_noise(X_img):
+    row, col = X_img.shape
+    mu, sigma = 0, 0.1  # Centre of the distribution, Standard deviation of the distribution
+    # creating a noise with the same dimension as the dataset (2,2)
+    noise = 1000 * np.random.normal(mu, sigma, [row, col])
+    noisy = X_img + noise
 
-def convert_array_to_image(arr):
-    pass
+    return noisy
 
-def calculate_psnr(img1, img2):
+def add_salt_peper_noise(img):
+    row, col = img.shape
+    number_of_pixels = random.randint(3000, 10000)
+    for _ in range(number_of_pixels):
+        x_coord = random.randint(0, row - 1)
+        y_coord = random.randint(0, col - 1)
+        img[x_coord][y_coord] = 255
+
+    number_of_pixels = random.randint(3000, 10000)
+    for _ in range(number_of_pixels):
+        x_coord = random.randint(0, row - 1)
+        y_coord = random.randint(0, col - 1)
+        img[x_coord][y_coord] = 0
+
+    return img
+
+
+def calculate_psnr(img1, img2):   # Peak Signal-to-Noise Ratio
     # img1 = img1.astype(np.float64)
     # img2 = img2.astype(np.float64)
     mse = np.mean((img1 - img2) ** 2)
