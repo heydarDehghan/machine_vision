@@ -10,12 +10,15 @@ def process_image():
     filenames = ['1.jpg', '2.jpg', '3.jpg']
     for filename in filenames:
         image = cv2.imread(os.path.join(path, filename))
+        # convert image to gray
         gray = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
 
+        # edge detection in image
         ddepth = cv2.cv.CV_32F if imutils.is_cv2() else cv2.CV_32F
         gradX = cv2.Sobel(gray, ddepth=ddepth, dx=1, dy=0, ksize=-1)
         gradY = cv2.Sobel(gray, ddepth=ddepth, dx=0, dy=1, ksize=-1)
 
+        # blur image and convert it to binary with trsh 200
         gradient = cv2.subtract(gradX, gradY)
         gradient = cv2.convertScaleAbs(gradient)
 
@@ -46,7 +49,7 @@ def process_image():
         image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
         plt.imshow(image)
         plt.show()
-        cv2.imwrite(f'result/part_four/{filename}.jpg',image)
+        cv2.imwrite(f'result/part_four/{filename}.jpg', image)
 
 
 if __name__ == '__main__':
