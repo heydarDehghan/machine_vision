@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="b00d4920-b9e3-48ca-aff6-5dd3bcabf6dc" name="Changes" comment="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/.gitignore&#10;#&#9;.idea/misc.xml&#10;#&#9;.idea/modules.xml&#10;&#10;Part 3 is Complate">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/homeWorkOne/Part 4.py" beforeDir="false" afterPath="$PROJECT_DIR$/homeWorkOne/Part 4.py" afterDir="false" />
@@ -32,12 +33,17 @@
       <change beforePath="$PROJECT_DIR$/homeWorkOne/result/part_three/part_three_b/img_with_noise_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/homeWorkOne/result/part_three/part_three_b/img_with_noise_1.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/homeWorkOne/result/part_three/part_three_b/img_with_noise_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/homeWorkOne/result/part_three/part_three_b/img_with_noise_2.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/homeWorkOne/result/part_three/part_three_b/img_with_noise_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/homeWorkOne/result/part_three/part_three_b/img_with_noise_3.jpg" afterDir="false" />
+=======
+    <list default="true" id="00f18860-7dde-4337-83da-ce14adbd0bfd" name="Changes" comment="part one is completed">
+      <change beforePath="$PROJECT_DIR$/homeWorkOne/Part 4.py" beforeDir="false" afterPath="$PROJECT_DIR$/homeWorkOne/Part 4.py" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< Updated upstream
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -45,17 +51,24 @@
       </list>
     </option>
   </component>
+=======
+>>>>>>> Stashed changes
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+<<<<<<< Updated upstream
   <component name="ProjectId" id="2GdCZCnBZqConIMZnk9JJkrlNla" />
+=======
+  <component name="ProjectId" id="2GfnhB6kzRJ1DGqdVhgB0KVchxJ" />
+>>>>>>> Stashed changes
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< Updated upstream
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -272,6 +285,50 @@
     <option name="localTasksCounter" value="8" />
     <servers />
   </component>
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/heydarPlace/uni/term5/machine_vision/venv_machine_vision/Scripts",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\heydarPlace\uni\term5\machine_vision\git_vcs\machine_vision\homeWorkOne\result" />
+      <recent name="D:\heydarPlace\uni\term5\machine_vision\git_vcs\machine_vision\homeWorkOne" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="00f18860-7dde-4337-83da-ce14adbd0bfd" name="Changes" comment="" />
+      <created>1666788623087</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1666788623087</updated>
+      <workItem from="1666788624950" duration="215000" />
+      <workItem from="1666852800036" duration="661000" />
+      <workItem from="1666945374949" duration="2558000" />
+      <workItem from="1667118045776" duration="100000" />
+      <workItem from="1668407555471" duration="2384000" />
+    </task>
+    <task id="LOCAL-00001" summary="part one is completed">
+      <created>1666788773180</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1666788773180</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+>>>>>>> Stashed changes
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -284,6 +341,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+<<<<<<< Updated upstream
     <MESSAGE value="Elahe change this file" />
     <MESSAGE value="Elahe add part4 to directory" />
     <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/.gitignore&#10;#&#9;.idea/misc.xml&#10;#&#9;.idea/modules.xml" />
@@ -291,5 +349,9 @@
     <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/.gitignore&#10;#&#9;.idea/misc.xml&#10;#&#9;.idea/modules.xml&#10;&#10;Part4 is update" />
     <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/.gitignore&#10;#&#9;.idea/misc.xml&#10;#&#9;.idea/modules.xml&#10;&#10;Part 3 is Complate" />
     <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/.gitignore&#10;#&#9;.idea/misc.xml&#10;#&#9;.idea/modules.xml&#10;&#10;Part 3 is Complate" />
+=======
+    <MESSAGE value="part one is completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="part one is completed" />
+>>>>>>> Stashed changes
   </component>
 </project>
